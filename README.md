@@ -36,3 +36,6 @@ Proxy between `sock` and `target`.
 
 ## License
 MIT License (see `./LICENSE`).
+
+## TODO
+- tests
