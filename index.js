@@ -6,8 +6,7 @@ var net = require('net');
 function proxy (s, target) {
   var t = net.connect(target);
 
-  s.pipe(t);
-  t.pipe(s);
+  s.pipe(t).pipe(s);
 }
 
 module.exports = proxy;

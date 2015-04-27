@@ -20,7 +20,9 @@ var s = net.connect({ port: 3000 }, function () {
   s.write('test');
 });
 
-s.on('data', console.log);
+s.on('data', function (data) {
+  console.log(data.toString());
+});
 
 // will output 'proxied'
 ```
