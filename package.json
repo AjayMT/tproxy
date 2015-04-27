@@ -1,7 +1,7 @@
 
 {
   "name": "tproxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "super simple tcp proxy",
   "dependencies": {},
   "devDependencies": {
@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "node test.js"
   },
   "author": "Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.github.com)",
   "license": "MIT",
