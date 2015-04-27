@@ -8,7 +8,7 @@ var proxy = require('tproxy');
 
 net.createServer(function (sock) {
   sock.on('data', function () {
-    sock.write('proxied\r\n');
+    sock.write('proxied');
   });
 }).listen(3001);
 
@@ -34,7 +34,9 @@ $ npm install tproxy --save
 
 ## API
 ### tproxy(sock, target)
-Proxy between `sock` and `target`.
+Make a proxy between `sock` and `target`. This function returns an instance of `net.Socket`, which is the socket connected to `target`.
+
+`target` is what you'd normally call `net.connect` with.
 
 ## License
 MIT License (see `./LICENSE`).
