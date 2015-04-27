@@ -40,6 +40,3 @@ Make a proxy between `sock` and `target`. This function returns an instance of `
 
 ## License
 MIT License (see `./LICENSE`).
-
-## TODO
-- tests
